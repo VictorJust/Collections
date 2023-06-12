@@ -4,10 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Collections
+namespace Collections.Collections
 {
-    public class Stack
+    public class ListBasedStack<T>
     {
+        public ListBasedStack(List<int> list)
+        {
+            this.list = list;
+        }
+
         List<int> list = new List<int>();
         public void Push(int value)
         {
